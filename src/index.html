@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Silicon-Assignment</title>
+</head>
+<body>
+    <div class="">
+        <nav class="">
+            <div class="">
+                <div class="">
+                        <img src="../assets/img/siliconLogo.svg" alt="Silicon Company Logo">
+                </div>
+                    <div class="hidden md:block">
+                        <span>Features</span>
+                    </div>
+                </div>
+                <div class="">
+                    <span class="hidden md:block">Dark Mode</span>
+                    <label class="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-10 h-5 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 drop-shadow-lg"></div>
+                    </label>
+                    <button class="hidden md:block">Sign in/up</button>
+                    <div class="tham tham-e-squeeze tham-w-6 h-4">
+                        <div class="tham-box">
+                            <div class="tham-inner bg-[#3E4265]" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header class="">
+                <h1 class="">Manage All Your<br/> Money in One App</h1>
+                <h3 class="text-[#585C7B]">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket</h3>
+                    <img src="../assets/img/appstore.svg" alt="">
+                    <img src="../assets/img/googleplay.svg" alt="">
+
+                <img class="hidden md:block" src="../assets/img/TwoIphone12ProOverlapping.svg" alt="">
+        </header>
+        <section>
+            <h2>App Features</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint necessitatibus nam iusto ducimus consequatur voluptatum vel aliquid nihil asperiores unde.</p>
+            <ul>
+                <li>Easy Payments</li>
+                <li>Data Security</li>
+                <li>Cost Statistics</li>
+                <li>SUpport 24/7</li>
+                <li>Regular Cashback</li>
+                <li>Top Standards</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How Does It Work?</h2>
+            <img src="../assets/img/Iphone12ProTransactions.svg" alt="">
+            <h3>Transfers to people from your contact list</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, repellat modi optio dolorem amet possimus sunt.</p>
+        </section>
+        <section>
+            <h3>Any questons? Check out the FAQ's</h3>
+            <p>Still have unanswered questions and need to get in touch?</p>
+            <div>What formats can i downoad my transaction history in?</div>
+            <div>Can i schedule future transfers?</div>
+            <div>When can i use Banking App services?</div>
+            <div>Can i create my own password that is easy for me to remember?</div>
+            <div>What happenns if i forget or lose my password?</div>
+            <button>Contact us now</button>
+        </section>
+        <section>
+            <h3>Subscribe to our newsletter</h3>
+            <input type="email">
+            <button>subscribe</button>
+            <p>copyright</p>
+        </section>
+    </div>
+</body>
+<script>
+    const tham = document.querySelector(".tham");
+      
+    tham.addEventListener('click', () => {
+      tham.classList.toggle('tham-active');
+    });
+</script>
+</html>
