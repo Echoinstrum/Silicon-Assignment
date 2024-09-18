@@ -3,62 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <link href="../dist/output.css" rel="stylesheet">
     <title>Silicon-Assignment</title>
 </head>
-<body>
-    <div class="">
-        <nav class="">
-            <div class="">
-                <div class="">
-                        <img src="../assets/img/siliconLogo.svg" alt="Silicon Company Logo">
+<body class="font-sans">
+        <header class= "bg-custom-gradient">
+            <div class="container grid grid-cols-[1fr_auto_auto] lg:grid-cols-[1fr_auto_auto_auto] gap-4  items-center  py-2">
+                <div class="flex items-center gap-6">
+                    <a href="index.html">
+                        <img src="../assets/img/siliconLogo.svg" alt="Silicon logo">
+                    </a>
+                    <nav class="font-semibold hover:text-primary hover:underline active:text-primary active:underline">
+                        <a href="#" class="hidden lg:block">Features</a>
+                    </nav>
                 </div>
-                    <div class="hidden md:block">
-                        <span>Features</span>
+                <div class="flex gap-3 items-center">
+                    <div>
+                        <span class="hidden md:block">Dark Mode</span>
                     </div>
-                </div>
-                <div class="">
-                    <span class="hidden md:block">Dark Mode</span>
-                    <label class="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" value="" class="sr-only peer">
-                        <div class="relative w-10 h-5 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 drop-shadow-lg"></div>
-                    </label>
-                    <button class="hidden md:block">Sign in/up</button>
-                    <div class="tham tham-e-squeeze tham-w-6 h-4">
-                        <div class="tham-box">
-                            <div class="tham-inner bg-[#3E4265]" />
+                    <div class="flex gap-6 md:gap-12 items-center">
+                        <label class="inline-flex cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-11 h-6 bg-gray-600 peer-focus:outline-non rounded-full peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                        <div class="lg:hidden tham tham-e-squeeze tham-w-6 h-6">
+                            <div class="tham-box">
+                                <div class="tham-inner bg-gray-600" />
+                            </div>
                         </div>
                     </div>
+                    <a href="#" class="btn-primary hidden lg:block">
+                        <i class="fa-thin fa-user mr-1"></i>
+                        <span>Sign in / up</span>
+                    </a>
                 </div>
-            </nav>
-            <header class="">
-                <h1 class="">Manage All Your<br/> Money in One App</h1>
-                <h3 class="text-[#585C7B]">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket</h3>
-                    <img src="../assets/img/appstore.svg" alt="">
-                    <img src="../assets/img/googleplay.svg" alt="">
-
-                <img class="hidden md:block" src="../assets/img/TwoIphone12ProOverlapping.svg" alt="">
+            </div>
         </header>
+
+
+
+
+
+
+
+
         <section>
-            <h2>App Features</h2>
+            <h2 class="text-h2">App Features</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint necessitatibus nam iusto ducimus consequatur voluptatum vel aliquid nihil asperiores unde.</p>
-            <ul>
+            <ul class="text-h3">
                 <li>Easy Payments</li>
                 <li>Data Security</li>
                 <li>Cost Statistics</li>
-                <li>SUpport 24/7</li>
+                <li>Support 24/7</li>
                 <li>Regular Cashback</li>
                 <li>Top Standards</li>
             </ul>
         </section>
         <section>
-            <h2>How Does It Work?</h2>
+            <h2 class="text-h2">How Does It Work?</h2>
             <img src="../assets/img/Iphone12ProTransactions.svg" alt="">
-            <h3>Transfers to people from your contact list</h3>
+            <h3 class="text-h3">Transfers to people from your contact list</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, repellat modi optio dolorem amet possimus sunt.</p>
         </section>
         <section>
-            <h3>Any questons? Check out the FAQ's</h3>
+            <h3 class="text-h3">Any questons? Check out the FAQ's</h3>
             <p>Still have unanswered questions and need to get in touch?</p>
             <div>What formats can i downoad my transaction history in?</div>
             <div>Can i schedule future transfers?</div>
@@ -68,12 +77,11 @@
             <button>Contact us now</button>
         </section>
         <section>
-            <h3>Subscribe to our newsletter</h3>
+            <h3 class="text-h3">Subscribe to our newsletter</h3>
             <input type="email">
             <button>subscribe</button>
             <p>copyright</p>
         </section>
-    </div>
 </body>
 <script>
     const tham = document.querySelector(".tham");
