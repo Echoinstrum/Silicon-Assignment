@@ -8,8 +8,9 @@
     <title>Silicon-Assignment</title>
 </head>
 <body class="font-sans">
-        <header class= "bg-custom-gradient">
-            <div class="container grid grid-cols-[1fr_auto_auto] lg:grid-cols-[1fr_auto_auto_auto] gap-4  items-center  py-2">
+    <div class="bg-custom-gradient">
+        <header class="container">
+            <div class="items-center grid grid-cols-[1fr_auto_auto] lg:grid-cols-[1fr_auto_auto_auto] py-2 md:py-8">
                 <div class="flex items-center gap-6">
                     <a href="index.html">
                         <img src="../assets/img/siliconLogo.svg" alt="Silicon logo">
@@ -33,17 +34,41 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn-primary hidden lg:block">
-                        <i class="fa-thin fa-user mr-1"></i>
+                    <a href="#" class="btn-primary hidden  lg:block">
+                        <i class="fa-thin fa-user mr-2"></i>
                         <span>Sign in / up</span>
                     </a>
                 </div>
             </div>
         </header>
-
-
-
-
+        <main class="container">
+            <section class="pb-5 md:p-0 mt-6">
+                <div class="md:grid md:grid-areas-layout md:grid-cols-[1fr_1fr] lg:grid-areas-desktop-layout gap-20 md:mt-12 lg:mt-40 lg:gap-6">
+                    <div class="grid-in-header text-center lg:text-left mb-8 md:mb-20 lg:mb-0 lg:max-w-[50%]">
+                        <h1 class="text-center text-4xl md:text-5xl lg:text-[56px] md:leading-snug font-extrabold md:max-w-[80%] md:mx-auto lg:ml-0 lg:text-left">Manage All Your Money in One App</h1>
+                    </div>
+                    <div class="grid-in-content text-center md:text-left mb-8 md:mb-12 lg:max-w-[75%] lg:mb-20">
+                        <p class="text-lg mb-9">We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                        <div class="flex flex-col md:flex-row gap-4 mb-8 md:mb-12 lg:mb-36">
+                            <a class="btn-black"  href="#"><img class="mx-auto"  src="../assets/img/appstore-light.svg.svg" alt=""></a>
+                            <a class="btn-black"  href="#"><img class="mx-auto"  src="../assets/img/googleplay-light.svg.svg" alt=""></a>
+                        </div>
+                        <a class="flex justify-center md:justify-start gap-4 items-center">
+                            <span class="flex justify-center items-center border-solid rounded-full h-12 w-12 bg-white"><i class="fa-solid fa-angle-down"></i></span>
+                            <span>Discover more</span>
+                        </a>
+                    </div>
+                    <div class="relative grid-in-images hidden md:block">
+                        <img class="absolute -z-10 bottom-0 right-0 w-[70%] lg:w-[60%]" src="../assets/img/iPhone 12 Pro creditcards.svg" alt="iphone your cards">
+                        <img class="absolute -z-20 bottom-0 right-[120px] lg:right-56 w-[70%] lg:w-[60%]" src="../assets/img/iPhone 12 Pro budget.svg" alt="iphone my budget">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+        
+        
+        
 
 
 
