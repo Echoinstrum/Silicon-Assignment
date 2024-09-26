@@ -43,7 +43,12 @@ module.exports = {
         "h1": ["40px", { lineHeight: "1.2", fontWeight: "bold" }],
         "h2": ["32px", { lineHeight: "1.3", fontWeight: "bold" }],
         "h3": ["28px", { lineHeight: "1.3", fontWeight: "bold" }],
+
+        //Responsive sizes
+        // Removed fontWeight: extrabold property not getting it working. using inline style instead
+        "h3-sm": ["20px", { lineHeight: "1.3"}],
       },
+
       backgroundImage: {
         "custom-gradient": "linear-gradient(0deg, rgba(99,102,241,0.099) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%)"
       },
