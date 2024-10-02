@@ -206,7 +206,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#F3F6FF] py-24">
+    <section class="hidden lg:block bg-[#F3F6FF] py-24">
         <div class="container grid grid-cols-[300px_1fr] gap-32">
             <h2 class="text-4xl font-extrabold">Clients are Loving Our App</h2>
             <div class="flex flex-row gap-6">
@@ -249,21 +249,79 @@
             </div>
         </div>
     </section>
-    <section>
-        <h3 class="text-h3">Any questons? Check out the FAQ's</h3>
-        <p>Still have unanswered questions and need to get in touch?</p>
-        <div>What formats can i download my transaction history in?</div>
-        <div>Can i schedule future transfers?</div>
-        <div>When can i use Banking App services?</div>
-        <div>Can i create my own password that is easy for me to remember?</div>
-        <div>What happenns if i forget or lose my password?</div>
-        <button>Contact us now</button>
+    <section class="py-24">
+        <div class="container grid lg:grid-info-lg-layout md:grid-info-md-layout gap-x-36 md:gap-y-4">
+            <div class="info-header flex flex-col gap-6 sm:text-center lg:text-left flex-shrink">
+                <h2 class="text-h2 font-extrabold">Any questons? Check out the FAQ's</h2>
+                <p>Still have unanswered questions and need to get in touch?</p>
+            </div>
+            <div class="contact hidden md:flex gap-7 mb-36 max-h-28 flex-shrink">
+                <div class="flex flex-col gap-2 border rounded-lg p-3 flex-grow">
+                    <i class="fa-solid fa-phone-volume text-primary text-2xl"></i>
+                    <span class="text-sm text-[#565973]">Still have questions?</span>
+                    <span class="flex gap-3 items-center text-primary font-semibold">Contact us<i class="fa-regular fa-arrow-right"></i></span>
+
+                </div>
+                <div class="flex flex-col gap-2 border rounded-lg p-3 flex-grow">
+                    <i class="fa-solid fa-comment text-[#22C55E] text-2xl"></i>
+                    <span class="text-sm text-[#565973]">Don't like phone calls?</span>
+                    <span class="flex gap-3 items-center text-[#22C55E] font-semibold">Contact us<i class="fa-regular fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="accordion flex flex-col gap-4 ">
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">Is any of my personal information stored in the App?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">What formats can i download my transaction history in?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">Can i schedule future transfers?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">When can i use Banking App services?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">Can i create my own password that is easy for me to remember?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+                <div class="accordion-item cursor-pointer rounded-xl shadow drop-shadow-sm px-4 py-4">
+                    <div class="text-xl flex items-center justify-between">
+                        <h3 class="text-h3-sm font-semibold">What happens if i forget or lose my password?</h3>
+                        <span class="flex justify-center items-center border-solid rounded-full h-8 w-8 bg-gray-100"><i class="fa-solid fa-angle-down text-[10px]"></i></span>
+                    </div>
+                    <p class="p-2 accordion-toggle hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam esse labore quisquam recusandae architecto autem veritatis repudiandae, facilis ab officia expedita, quasi, quo odit obcaecati voluptate. Voluptatem eius optio sed quaerat maiores nisi minima perspiciatis consequuntur dolores ab praesentium obcaecati voluptatibus fuga impedit, minus ut, voluptas et dolore est temporibus?</p>
+                </div>
+            </div>
+        </div>
+        <button class="contact md:hidden">Contact us now</button>
     </section>
-    <section>
-        <h3 class="text-h3">Subscribe to our newsletter</h3>
-        <input type="email">
-        <button>subscribe</button>
-        <p>copyright</p>
+    <section class="py-24 bg-[#F3F6FF]">
+        <div class="container">
+            <h3 class="text-h3">Subscribe to our newsletter</h3>
+            <input type="email">
+            <button>subscribe</button>
+            <p>copyright</p>
+        </div>
     </section>
 </body>
 <script>
@@ -272,5 +330,18 @@
     tham.addEventListener('click', () => {
       tham.classList.toggle('tham-active');
     });
+
+    //Fick hjälp av C-GPT med javascripten 
+
+    const items = document.querySelectorAll(".accordion-item")
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            const accordionToggle = item.querySelector(".accordion-toggle")
+
+            accordionToggle.classList.toggle("hidden");
+        })
+    })
+
 </script>
 </html>

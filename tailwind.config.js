@@ -61,7 +61,16 @@ module.exports = {
         "desktop-layout": [
           "header", "images",
           "content", "images"
-        ]
+        ],
+        "info-lg-layout": [
+          "info-header", "accordion",
+          "contact", "accordion"
+        ],
+        "info-md-layout": [
+          "info-header",
+          "accordion",
+          "contact"
+        ],
       },
     },
   },
@@ -97,6 +106,31 @@ module.exports = {
           },
         },
       });
+    },
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.grid-info-lg-layout': {
+          'display': 'grid',
+          'grid-template-columns': '400px 1fr',
+          'grid-template-areas': `"info-header accordion" "contact accordion"`,
+        },
+        '.grid-info-md-layout': {
+          'display': 'grid',
+          'grid-template-columns': '1fr',
+          'grid-template-areas': `"info-header" "accordion" "contact"`,
+        },
+        '.info-header': {
+          'grid-area': 'info-header',
+        },
+        '.accordion': {
+          'grid-area': 'accordion',
+        },
+        '.contact': {
+          'grid-area': 'contact',
+        },
+      };
+
+      addUtilities(newUtilities);
     },
   ],
 }
