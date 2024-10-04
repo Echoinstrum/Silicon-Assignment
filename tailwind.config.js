@@ -34,7 +34,7 @@ module.exports = {
         center: true,
         padding: "1rem",
         screens: { 
-          sm: "100%",
+          sm: "576px",
           md: "768px",
           lg: "1320px",
         }
@@ -43,10 +43,12 @@ module.exports = {
         "h1": ["40px", { lineHeight: "1.2", fontWeight: "bold" }],
         "h2": ["32px", { lineHeight: "1.3", fontWeight: "bold" }],
         "h3": ["28px", { lineHeight: "1.3", fontWeight: "bold" }],
+        "h4": ["24px", { lineHeight: "1.3", fontWeight: "bold"}],
 
         //Responsive sizes
         // Removed fontWeight: extrabold property not getting it working. using inline style instead
         "h3-sm": ["20px", { lineHeight: "1.3"}],
+        "h4-sm": ["20px", { lineHeight: "1.3"}]
       },
 
       backgroundImage: {
@@ -111,7 +113,8 @@ module.exports = {
       const newUtilities = {
         '.grid-info-lg-layout': {
           'display': 'grid',
-          'grid-template-columns': '400px 1fr',
+          'grid-template-columns': '410px 1fr',
+          'grid-template-rows': '150px 1fr',
           'grid-template-areas': `"info-header accordion" "contact accordion"`,
         },
         '.grid-info-md-layout': {
