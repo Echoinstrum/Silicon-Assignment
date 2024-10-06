@@ -43,8 +43,8 @@
         </header>
         <main class="container">
             <section class="pb-5 md:p-0 mt-6">
-                <div class="md:grid md:grid-areas-layout md:grid-cols-[1fr_1fr] lg:grid-areas-desktop-layout gap-20 md:mt-12 lg:mt-40 lg:gap-6">
-                    <div class="grid-in-header text-center lg:text-left mb-8 md:mb-20 lg:mb-0 lg:max-w-[50%]">
+                <div class="md:grid md:grid-areas-layout md:grid-cols-[1fr_1fr] lg:grid-areas-desktop-layout gap-20 md:mt-12 lg:mt-44 lg:gap-8">
+                    <div class="grid-in-header text-center lg:text-left mb-8 md:mb-20 lg:mb-4 lg:max-w-[50%]">
                         <h1 class="text-center text-4xl md:text-5xl lg:text-[56px] md:leading-snug font-extrabold md:max-w-[80%] md:mx-auto lg:ml-0 lg:text-left">Manage All Your Money in One App</h1>
                     </div>
                     <div class="grid-in-content text-center md:text-left mb-8 md:mb-12 lg:max-w-[75%] lg:mb-20">
@@ -54,23 +54,22 @@
                             <a class="btn-black"  href="#"><img class="mx-auto"  src="../assets/img/googleplay-light.svg.svg" alt=""></a>
                         </div>
                         <a class="flex justify-center md:justify-start gap-4 items-center">
-                            <span class="flex justify-center items-center border-solid rounded-full h-12 w-12 bg-white"><i class="fa-solid fa-angle-down"></i></span>
-                            <span>Discover more</span>
+                            <span class="flex justify-center items-center border-solid rounded-full h-12 w-12 bg-white lg:mt-16"><i class="fa-solid fa-angle-down"></i></span>
+                            <span class=" lg:mt-16">Discover more</span>
                         </a>
                     </div>
                     <div class="relative grid-in-images hidden md:block">
-                        <img class="absolute -z-10 bottom-0 right-0 w-[70%] lg:w-[60%]" src="../assets/img/iPhone 12 Pro creditcards.svg" alt="iphone your cards">
-                        <img class="absolute -z-20 bottom-0 right-[120px] lg:right-56 w-[70%] lg:w-[60%]" src="../assets/img/iPhone 12 Pro budget.svg" alt="iphone my budget">
+                        <img class="absolute -z-10 bottom-0 right-0 w-[70%] lg:w-[65%]" src="../assets/img/iPhone 12 Pro creditcards.svg" alt="iphone your cards">
+                        <img class="absolute -z-20 bottom-0 right-[120px] lg:right-56 w-[70%] lg:w-[65%]" src="../assets/img/iPhone 12 Pro budget.svg" alt="iphone my budget">
                     </div>
                 </div>
             </section>
         </main>
     </div>
         
-        
-        
-    <section class="container pt-2 pb-20 lg:pt-6 lg:pb-28">
-        <ul class="hidden md:flex items-center justify-between md:gap-4">
+       <!-- En hel del hjälp från Hans video - Tips och Trix brands, men med viss egen justering -->
+    <section class="container hidden md:block pt-2 pb-20 lg:pt-6 lg:pb-28">
+        <ul class="flex items-center justify-between md:gap-4">
             <li class="flex justify-center items-center border rounded-lg h-24 w-48"><img src="../assets/img/logoIpsumOne.svg" alt=""></li>
             <li class="flex justify-center items-center border rounded-lg h-24 w-48"><img src="../assets/img/logoIpsumTwo.svg" alt=""></li>
             <li class="flex justify-center items-center border rounded-lg h-24 w-48"><img src="../assets/img/logoIpsumThree.svg" alt=""></li>
@@ -161,9 +160,9 @@
     </section>
     <section class="hidden lg:block py-32">
         <div class="container grid justify-center">
-            <div class="grid grid-cols-[50%_50%] grid-rows-[400px_400px] gap-20 justify-center items-center w-[75%] mx-auto">
+            <div class="grid grid-cols-[50%_50%] grid-rows-[500px_500px] gap-16 justify-center items-center w-[75%] mx-auto">
                 <div class="flex flex-col items-start gap-10">
-                    <h3 class="text-h3 font-extrabold">Make your money transfer simple and clear</h3>
+                    <h3 class="text-h3 font-extrabold">Make your money <br> transfer simple and clear</h3>
                     <div class="flex flex-col gap-4">
                         <span class="flex gap-2 items-center"><i class="fa-sharp fa-light fa-circle-check text-primary"></i> Banking transactions are free or you</span>
                         
@@ -176,15 +175,15 @@
                         <i class="fa-regular fa-arrow-right"></i>
                     </a>
                 </div>
-                <div class="flex justify-end relative">
-                    <img src="../assets/img/SmallBalanceStatistic.svg" alt="">
-                    <img class="absolute -bottom-14 -right-14" src="../assets/img/SendMoneyToContact.svg" alt="">
+                <div class="flex justify-start relative">
+                    <img class="mb-24" src="../assets/img/SmallBalanceStatistic.svg" alt="">
+                    <img class="absolute bottom-10 right-3" src="../assets/img/SendMoneyToContact.svg" alt="">
                 </div>
                 <div class="relative">
-                    <img class="" src="../assets/img/ContactsList.svg" alt="">
-                    <img class="absolute top-1/4 -right-1.5" src="../assets/img/CreditCard.svg" alt="">
+                    <img class="h-[450px]" src="../assets/img/ContactsList.svg" alt="">
+                    <img class="absolute bottom-16 right-5" src="../assets/img/CreditCard.svg" alt="">
                 </div>
-                <div class="flex flex-col items-start gap-10">
+                <div class="flex flex-col items-start gap-12">
                     <h3 class="text-h3 font-extrabold">Receive payment from international bank details</h3>
                     <div class="flex gap-6">
                         <div class="flex flex-col gap-4">
@@ -363,7 +362,7 @@
             accordionButton.classList.toggle("bg-primary")
             accordionButton.classList.toggle("text-white")
 
-            if(accordionButtonArrow.classList.contains("fa-angle-down")){                                 //Found the classList.contains from an answer on stackoverflow by Felix Kling. Created the solution myself.
+            if(accordionButtonArrow.classList.contains("fa-angle-down")){     //Hittade classList.contains från ett svar på stackoverflow av Felix Kling. Buggde funktionen själv.
                 accordionButtonArrow.classList.replace("fa-angle-down", "fa-angle-up")
             } else {
                 accordionButtonArrow.classList.replace("fa-angle-up", "fa-angle-down")

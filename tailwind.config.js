@@ -28,7 +28,7 @@ module.exports = {
           800: '#33354D',
           900: '#0B0F19',
         },
-        // Du kan lägga till fler färger här om det behövs
+        // Fick hjälp av c-gpt hur man satte up flera egna "defaults" för olika element här.
       },
       container: { // Anpassad container
         center: true,
@@ -46,7 +46,7 @@ module.exports = {
         "h4": ["24px", { lineHeight: "1.3", fontWeight: "bold"}],
 
         //Responsive sizes
-        // Removed fontWeight: extrabold property not getting it working. using inline style instead
+        // Tog bort fontWeight: extrabold, fick det av någon anledning inte att fungera. Därför jag använder de på flertalet ställe som inline i html:en
         "h3-sm": ["20px", { lineHeight: "1.3"}],
         "h4-sm": ["20px", { lineHeight: "1.3"}]
       },
